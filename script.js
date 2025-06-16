@@ -21,13 +21,13 @@ function appendOperation(operation) {
     previousInput = '';
     document.getElementById('display').value = currentInput;
 
-    
+
+}
 function clearDisplay() {
     currentInput = '';
     previousInput = '';
     currentOperation = '';
     document.getElementById('display').value = '';
-}
 }
 
 
