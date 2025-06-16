@@ -20,4 +20,14 @@ function appendOperation(operation) {
     currentOperation = '';
     previousInput = '';
     document.getElementById('display').value = currentInput;
+
+    
+function clearDisplay() {
+    currentInput = '';
+    previousInput = '';
+    currentOperation = '';
+    document.getElementById('display').value = '';
 }
+}
+
+
