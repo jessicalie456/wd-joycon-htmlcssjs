@@ -17,28 +17,35 @@
     <!-- [<]   [>]      [B][A] -->
     <!--    [v]                -->
     <header>
-        <section class="display">
-            <div id="screen">
-                <h1>Layar</h1>
-            </div>    
+        <section class="display-main">
+            <input type="text" id="display" class="display" disabled>   
     </header>
     </section>
     <section class="button">
         <div class="button-up">
-            <button type="button">Up</button>
+            <button type="button" onclick="appendText('Up')">Up</button>
         </div>
-        <div class="button-right">
-            <button type="button">Right</button>
-        </div>
-        <div class="button-left">
-            <button type="button">Left</button>
+        <div class="right-left">
+            <div class="button-right">
+                <button type="button" onclick="appendText('Right')">Right</button>
+            </div>
+            <div class="button-left">
+                <button type="button" onclick="appendText('left')">Left</button>
+            </div>    
+
+            <div class="BtnB">
+                <button type="button" onclick="appendText('Hi')">Pesan "Hi"</button>
+            </div>
+            <div class="BtnA">
+                <button type="button" onclick="appendText('GoodBye')">Pesan "GoodBye"</button>
+            </div>
         </div>
         <div class="button-down">
-            <button type="button">Down</button>
+            <button type="button" onclick="appendText('Down')">Down</button>
         </div>
-        
+        <button class="button-clear" onclick="clearDisplay()">Clear</button>
     </section>
-
+    
 
     <!-- controller dibagi menjadi 2 bagian, kiri untuk arah, kanan untuk aksi -->
     <!-- banyak cara yang bisa kamu terapkan, sesuaikan saja dengan apa yang menurut kamu paling nyaman -->
@@ -70,6 +77,6 @@
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
 
-
+ <script src="script.js"></script>
 </body>
 </html>
